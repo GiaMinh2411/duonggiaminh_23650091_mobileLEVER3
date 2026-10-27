@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1150px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+h1 {
+    color: #166534;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+article {
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.price {
+    color: #166534;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+button,
+input,
+select {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    background: #166534;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #14532d;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.danger:hover {
+    background: #b91c1c;
+}
+
+.secondary {
+    background: #64748b;
+}
+
+input,
+select {
+    border: 1px solid #cbd5e1;
+    max-width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #f0fdf4;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.discount-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.total {
+    color: #166534;
+    font-size: 20px;
+}
+
+.notice,
+.error {
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.notice {
+    background: #dcfce7;
+}
+
+.error {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+@media (max-width: 700px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+    section {
+        padding: 16px;
+    }
+}
